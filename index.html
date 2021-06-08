@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bs_form_nav-29</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+    <br/>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+        <a href="" class="navbar-brand">LOGO</a>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myMenu">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+
+                <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
+                     <ul class="dropdown-menu bg-dark text-center">
+                       <li class="nav-item"><a href="" class="nav-link">Service One</a></li>
+                       <li class="nav-item"><a href="" class="nav-link">Service Two</a></li>
+                       <li class="nav-item"><a href="" class="nav-link">Service Three</a></li>
+
+                   </ul>
+                </li>
+
+                <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#signinModal" data-bs-toggle="modal" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="#signupModal" data-bs-toggle="modal" class="nav-link">Sign Up</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 border-0 mt-2">
+                <div class="mb-2">
+                    <button type="button" data-bs-target="#signupModal" data-bs-toggle="modal" class="btn btn-success">Sign Up</button>
+                    <button type="button" data-bs-target="#signinModal" data-bs-toggle="modal" class="btn btn-success">Sign in</button>
+                </div>
+                <div id="signupModal" class="modal fade">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+
+                            <div class="card">
+                             <div class="card-body">
+
+
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">First Name</label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">Last Name</label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">Email Address</label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">Password</label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">Address</label>
+                                    <div class="col-md-9 border-0">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 border-0">Gender Info</label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="radio" name="gender" value="male"> Male
+                                        <input type="radio" name="gender" value="female"> Female
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">District Name</label>
+                                    <div class="col-md-9 border-0">
+
+                                        <select>
+                                            <option value="">--Select District---</option>
+                                            <option value="dhaka">Dhaka</option>
+                                            <option value="gazipur">Gazipur</option>
+                                            <option value="dohar">Dohar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">Image</label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="file" class="form-control-file" accept="image/*">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 col-form-label border-0">Date of Birth</label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <label class="col-md-3 border-0"></label>
+                                    <div class="col-md-9 border-0">
+                                        <input type="checkbox" name="agree" value="1"> I agree the terms and conditions.
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2">
+                                    <div class="col-md-12 border-0 d-grid gap-2">
+                                        <input type="button" name="btn" value="Registration" class="btn btn-success">
+                                    </div>
+
+                                </div>
+
+
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    </div>
+                </div>
+                <div id="signinModal" class="modal fade">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="form-group mt-2">
+                                    <label>Email Address</label>
+                                    <div class="mt-2">
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                        <div class="form-group mt-2">
+                                    <label>Password</label>
+                                    <div class="mt-2">
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                        <div class="form-group mt-2 d-grid gap-2">
+                                    <input type="button" class="btn btn-success" value="Login"></input>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 border-0">
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">First Name</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="input-group mt-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Last Name</span>
+                        </div>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="input-group mt-2">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Search</span>
+                        </div>
+
+                    </div>
+                    <div class="input-group mt-2">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                             <button type="button" class="btn btn-success">GO</button>
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Mobile Number">
+                        <input type="text" class="form-control" placeholder="Land Phone">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Phone Number</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 border-0">
+
+                    <form class="form-check-inline">
+
+                    <div class="form=group mt-2">
+
+                        <input type="email" name="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group mt-2">
+
+                        <input type="password" name="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group mt-2">
+                        <input type="button" name="btn" class="btn btn-success" value="Login">
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 border-0">
+
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">First Name</label>
+                        <div class="col-md-9 border-0">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">Last Name</label>
+                        <div class="col-md-9 border-0">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">Email Address</label>
+                        <div class="col-md-9 border-0">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">Password</label>
+                        <div class="col-md-9 border-0">
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">Address</label>
+                        <div class="col-md-9 border-0">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 border-0">Gender Info</label>
+                        <div class="col-md-9 border-0">
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">District Name</label>
+                        <div class="col-md-9 border-0">
+
+                            <select>
+                                <option value="">--Select District---</option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="gazipur">Gazipur</option>
+                                <option value="dohar">Dohar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">Image</label>
+                           <div class="col-md-9 border-0">
+                              <input type="file" class="form-control-file" accept="image/*">
+                           </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 col-form-label border-0">Date of Birth</label>
+                        <div class="col-md-9 border-0">
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <label class="col-md-3 border-0"></label>
+                        <div class="col-md-9 border-0">
+                            <input type="checkbox" name="agree" value="1"> I agree the terms and conditions.
+                        </div>
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-md-12 border-0 d-grid gap-2">
+                            <input type="button" name="btn" value="Registration" class="btn btn-success">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 border-0">
+
+                    <div class="form-group mt-2">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" class="form-control form-control-sm"/>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="lastName">Last Name</label>
+                        <input type="email" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" class="form-control" id="emailAddress">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="number">Phone Number</label>
+                        <input type="number" class="form-control" id="number"/>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="address" class="form-group">Address</label>
+                        <textarea class="form-control" id="address"></textarea>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Gender Info</label>
+                           <div>
+                              <input type="radio" name="gender" value="male"> Male
+                              <input type="radio" name="gender" value="female"> Female
+                           </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>District Name</label>
+                        <select class="form-control">
+                            <option value="">--Select District--</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Gazipur">Gazipur</option>
+                            <option value="Dohar">Dohar</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Image</label>
+                        <input type="file" class="form-control-file" accept="image/*">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Date of Birth</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="form-group row mt-2">
+                        <div class="col-md-12 border-0">
+                            <input type="checkbox" name="agree" value="1"> I agree the terms and conditions.
+                        </div>
+                    </div>
+                    <div class="form-group d-grid gap-2 mt-2">
+                        <input type="button" class="btn btn-success" value="Register">
+                    </div>
+<!--                    <div class="d-grid gap-2">-->
+<!--                        <button class="btn btn-primary" type="button">Button</button>-->
+<!--                        <button class="btn btn-primary" type="button">Button</button>-->
+<!--                    </div>-->
+                </div>
+
+            </div>
+        </div>
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    </body>
+</html>
